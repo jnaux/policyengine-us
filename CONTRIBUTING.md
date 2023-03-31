@@ -2,11 +2,41 @@ Thank you for wanting to contribute to OpenFisca! :smiley:
 
 TL;DR: [GitHub Flow](https://guides.github.com/introduction/flow/), [SemVer](http://semver.org/).
 
-## Pull requests
+## From Creating a Issue to Creating a Pull Request
 
 We follow the [GitHub Flow](https://guides.github.com/introduction/flow/): all code contributions are submitted via a pull request towards the `master` branch.
 
 Opening a Pull Request means you want that code to be merged. If you want to only discuss it, send a link to your branch along with your questions through whichever communication channel you prefer.
+
+1. **Identify an issues** <br>
+If you want to work on a task that is not yet an issue, create an issue in GitHub for it. One way to do so is to so is as the following: <br>
+* Log on to www.github.com
+* Access the **PolicyEngine** repository
+* Click on the **Issues** menu
+* Click on **New issue** icon
+* Specify the program rule and link to a law and/or government site (e.g. tax form)
+* Add **Labels** for better classification
+* You can also assign the issue to specific person/people
+
+2. **Claiming Issues and Working with Issues Assigned in VS Code** <br>
+* In VS Code, open the GitHub Extension
+* Click on the **Issues** tab in the bottom left. If you have issues assigned to you, you can access them in **My Issues**. If not, you can find the issue you'd like to work on. **Click the right arrow icon → next to the issue number and issue title**, this will create a new branch named for the issue number.
+
+3. **Working on the Issues** <br>
+Usually, there are four specific files you will need to work on for an issue: Test (.yaml), Parameter (.yaml), *Variable (.py), *Changelog (.yaml).
+
+  1.**Test** <br>
+  * You want to create a unit test. This will be a file in *policyengine_{country}/tests/[path to program]/variable.yaml*.
+  * We apply test driven development, where we write tests before writing the logic. This means tests will break and the goal of the Pull Request (PR) is to pass the tests.
+  * Unit tests specify direct inputs to the variable for a number of cases, and the expected output.
+  2.**Parameter**
+  3.**Variable**
+  4.**Changelog**
+   > This file describes the changes you've made, it usually follows the following format: <br>
+   > -bump: <br>
+   >  changes:<br>
+   >  added:<br>
+4. 
 
 ### Peer reviews
 
